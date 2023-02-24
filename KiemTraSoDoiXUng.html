@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+         let  string = prompt("nhập vào một chuỗi");
+           function kiemTraChuoidoiXung(str) {
+              let s = [];
+               let a = [];
+               for (let i = 0; i < str.length; i++) {
+                   s[i] = str.slice(i,i+1);
+                   a[i] = str.slice(str.length - i-1 ,str.length -  i); // lấy từ vị trí cuỗi , bắt đầu từ phần tử đầu tiên;
+                   if(s[i] === a[i]){
+                       return true;
+                   }else {
+                        return  false ;
+                   }
+               }
+                  return  null;
+           }
+           alert("Chuỗi này có đối xứng không :"+kiemTraChuoidoiXung(string));
+
+
+
+     </script>
+
+</body>
+</html>

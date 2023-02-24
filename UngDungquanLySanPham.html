@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 style="color: red">Add New Product</h2>
+<input type="text" id="nhap" value="" /><button onclick="themDanhSach(a)">Add</button>
+<h2>Display All product</h2>
+<h4>Product Name</h4>
+<table>
+      <tr>
+
+      </tr>
+</table>
+<script>
+    let a =["Sony Xperia","Samsung Galaxy","Nokia 6 ","Xiaomi Redmi Note 4 ","Apple Iphone 6s",
+        "Xiaomi Mi 5s plus","Apple iPhone 8 Plus","Fujistu F-04E","Oppo A71"
+    ];
+     function hienthiDanhSach(array){
+         for (let i = 0; i <array.length ; i++) {
+             document.write(array[i]+"<br/>");
+         }
+     }
+     hienthiDanhSach(a);
+     function themDanhSach(array) {
+         let n = document.getElementById("nhap").value;
+         array.push(n + "<br/>");
+         document.write(array + "");
+     }
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

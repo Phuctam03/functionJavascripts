@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+      let feet = parseFloat(prompt("nhập vào feet"));
+      let meter = parseFloat(prompt("nhập vào metter"));
+
+      let result1 = foottoMetter(feet);
+      let result2= metertofoot(meter);
+
+       document.write("chuyển từ f -> m"+result1+"<br/>");
+       document.write("chuyển từ m -> f"+result2);
+      function foottoMetter(foot){
+          return 0.305*foot;
+      }
+      function metertofoot(m) {
+          return 3.279 * m;
+
+      }
+</script>
+
+</body>
+</html>
