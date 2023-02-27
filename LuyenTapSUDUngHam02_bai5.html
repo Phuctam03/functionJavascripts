@@ -11,18 +11,18 @@
      let c = parseInt(prompt("nhập số thứ ba :"));
 
      function kiemTrasoLonNhat(a,b,c,){
-         let max = a ;
-         if( max < b ){
-                max = b ;
-                if( max < c ){
-                     max = c ;
+         let min = a ;
+         if( min > b ){
+                min = b ;
+                if( max > c ){
+                     min = c ;
                 }
          }else {
-                max = a ;
+                min = a ;
          }
-         return max ;
+         return min ;
      }
-     alert("Số lớn nhất là "+kiemTrasoLonNhat(a,b,c));
+     alert("Số nhỏ nhất là "+kiemTrasoLonNhat(a,b,c));
 </script>
 </body>
 </html>
